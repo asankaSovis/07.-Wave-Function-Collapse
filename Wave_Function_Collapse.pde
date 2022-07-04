@@ -16,7 +16,7 @@ Coded by Asanka Akash Sovis
 tile[] tiles = null; // Available tile types
 tile[] slots = null; // Tile slots on the canvas
 int tileSize = 0; // Size of a tile
-int rowCount = 100; // Number of tiles per row
+int rowCount = 40; // Number of tiles per row
 
 void setup() {
   // Creating the canvas

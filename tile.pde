@@ -41,55 +41,123 @@ int[] allTiles() {
 // Setting up all the tiles we have. For each tile we create a
 // new tile instance with a suitable ID, icon image and neighbours
 tile[] setupTiles() {
-  // Blank tile
-  tile blankTile = new tile(
+  
+  tile tile00 = new tile(
     0, 
-    loadImage("tiles/demo/blank.png"), 
-    new int[]{0, 4}, 
-    new int[]{0, 1}, 
-    new int[]{0, 2}, 
-    new int[]{0, 3}
+    loadImage("tiles/blobs/tile00.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{2, 4, 7, 10}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
     );
   
-  // Down tile
-  tile downTile = new tile(
+  tile tile01 = new tile(
+    0, 
+    loadImage("tiles/blobs/tile01.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{3, 5, 7, 8}
+    );
+  
+  tile tile02 = new tile(
     1, 
-    loadImage("tiles/demo/down.png"), 
-    new int[]{0, 4}, 
-    new int[]{2, 3, 4}, 
-    new int[]{1, 3, 4}, 
-    new int[]{1, 2, 4}
+    loadImage("tiles/blobs/tile02.png"), 
+    new int[]{0, 4, 8, 9}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
     );
-  
-  // Top tile
-  tile leftTile = new tile(
+    
+  tile tile03 = new tile(
     2, 
-    loadImage("tiles/demo/left.png"), 
-    new int[]{1, 2, 3}, 
-    new int[]{2, 3, 4}, 
-    new int[]{1, 3, 4}, 
-    new int[]{0, 3}
+    loadImage("tiles/blobs/tile03.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{1, 5, 9, 10}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
     );
-  
-  // Right tile
-  tile rightTile = new tile(
+    
+  tile tile04 = new tile(
     3, 
-    loadImage("tiles/demo/right.png"), 
-    new int[]{1, 2, 3}, 
-    new int[]{2, 3, 4}, 
-    new int[]{0, 2}, 
-    new int[]{1, 2 ,4}
+    loadImage("tiles/blobs/tile04.png"), 
+    new int[]{0, 4, 8, 9}, 
+    new int[]{2, 4, 7, 10}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
     );
-  
-  // Up tile
-  tile upTile = new tile(
+    
+  tile tile05 = new tile(
     4, 
-    loadImage("tiles/demo/up.png"), 
-    new int[]{1, 2, 3}, 
-    new int[]{0, 1}, 
-    new int[]{1, 3, 4}, 
-    new int[]{1, 2, 4}
+    loadImage("tiles/blobs/tile05.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{1, 5, 9, 10}, 
+    new int[]{3, 5, 7, 8}
+    );
+    
+  tile tile06 = new tile(
+    5, 
+    loadImage("tiles/blobs/tile06.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
+    );
+    
+  tile tile07 = new tile(
+    6, 
+    loadImage("tiles/blobs/tile07.png"), 
+    new int[]{0, 4, 8, 9}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{1, 5, 9, 10}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
+    );
+    
+  tile tile08 = new tile(
+    7, 
+    loadImage("tiles/blobs/tile08.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{2, 4, 7, 10}, 
+    new int[]{1, 5, 9, 10}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
+    );
+    
+  tile tile09 = new tile(
+    8, 
+    loadImage("tiles/blobs/tile09.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{2, 4, 7, 10}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{3, 5, 7, 8}
+    );
+    
+  tile tile10 = new tile(
+    9, 
+    loadImage("tiles/blobs/tile10.png"), 
+    new int[]{0, 4, 8, 9}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{3, 5, 7, 8}
+    );
+    
+  tile tile11 = new tile(
+    10, 
+    loadImage("tiles/blobs/tile11.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
+    );
+    
+  tile tile12 = new tile(
+    11, 
+    loadImage("tiles/blobs/tile12.png"), 
+    new int[]{1, 2, 3, 5, 6, 7, 10, 11, 12}, 
+    new int[]{0, 1, 3, 5, 6, 8, 9, 11, 12}, 
+    new int[]{0, 2, 3, 4, 6, 7, 8, 11, 12}, 
+    new int[]{0, 1, 2, 4, 6, 9, 10, 11, 12}
     );
   
-  return new tile[]{blankTile, downTile, leftTile, rightTile, upTile};
+  return new tile[]{tile00, tile01, tile02, tile03, tile04, tile05, tile06, tile07, tile08, tile09, tile10, tile11, tile12};
 }
