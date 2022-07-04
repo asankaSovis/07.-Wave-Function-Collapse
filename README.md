@@ -1,4 +1,4 @@
-# 06. Wave Function Collapse ⏹️
+# 07. Wave Function Collapse ⏹️
 ## Art from Quantum Rules
 
 [Wave Function Collapse](https://en.wikipedia.org/wiki/Wave_function_collapse) is a concept in Quantum Mechanics that states that a wave function reduces to a single eigenstate due to interaction with the external world. Simply speaking, the number of possibilities reduces with the introduction of new information. I got the inspiration for this from a [Coding Adventure](https://youtu.be/rI_y2GAlQFM) [The Coding Train](https://www.youtube.com/c/TheCodingTrain) did recently.
